@@ -111,20 +111,29 @@ Projenin çalışır durumunu gösteren ekran görüntüleri `docs/screenshots/`
 
 
 
+## 📚 Detaylı Dokümantasyon
+
+Projenin detaylı API referansı ve Postman kullanım kılavuzu için aşağıdaki dokümanları inceleyebilirsiniz:
+
+- [📄 API Referans Dokümantasyonu (docs/API_REFERENCE.md)](docs/API_REFERENCE.md): Tüm endpoint'ler, parametreler ve örnek yanıtlar.
+- [🚀 Postman Kullanım Kılavuzu (docs/POSTMAN_GUIDE.md)](docs/POSTMAN_GUIDE.md): Postman koleksiyonunun kurulumu ve kullanımı.
+
 ## 📁 Proje Yapısı
 ```
 membership/
 ├── app/
 │   ├── Http/Controllers/Api/UserController.php
-│   ├── Models/User.php
-│   ├── Models/Firm.php
-│   ├── Services/UserService.php
-│   └── Repositories/UserRepository.php
+│   ├── Http/Requests/      # Form Request (Validasyon)
+│   ├── Models/
+│   ├── Services/
+│   └── Repositories/
 ├── database/
 │   ├── migrations/      # Tablo yapıları
 │   ├── database.sql     # Hazır SQL dump
 │   └── seeders/
 ├── docs/
+│   ├── API_REFERENCE.md # Detaylı API Dokümantasyonu
+│   ├── POSTMAN_GUIDE.md # Postman Kullanım Kılavuzu
 │   ├── membership_api.postman_collection.json # Postman Collection
 │   └── screenshots/     # Ekran görüntüleri
 ├── routes/
